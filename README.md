@@ -21,7 +21,7 @@ This setup aims to provide a clear separation of concerns while keeping both fro
 - Angular CLI (v19)
 - Java (v21+)
 - Springboot (3.4+)
-- Gradle
+- Maven
 
 ---
 
