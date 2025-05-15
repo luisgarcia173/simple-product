@@ -2,17 +2,14 @@ package com.luisgarcia.repositories.entities;
 
 import com.luisgarcia.repositories.enums.StatusEnum;
 import jakarta.persistence.*;
-import lombok.Data;
-
 import java.util.Date;
+import lombok.Data;
 
 @MappedSuperclass
 @Data
 public class AuditDataEntity {
 
-  @Id
-  @GeneratedValue
-  private long id;
+  @Id @GeneratedValue private long id;
 
   private Date createdDate;
   private Date updatedDate;
@@ -24,5 +21,4 @@ public class AuditDataEntity {
     this.createdDate = new Date();
     this.status = StatusEnum.ACTIVE;
   }
-
 }

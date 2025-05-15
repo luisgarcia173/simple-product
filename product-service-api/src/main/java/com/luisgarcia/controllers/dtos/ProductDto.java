@@ -1,13 +1,11 @@
 package com.luisgarcia.controllers.dtos;
 
-import com.luisgarcia.repositories.entities.CategoryEntity;
+import java.io.Serializable;
+import java.math.BigDecimal;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.io.Serializable;
-import java.math.BigDecimal;
 
 @Data
 @Builder
@@ -22,5 +20,4 @@ public class ProductDto implements Serializable {
   private String categoryPath;
   private boolean available;
   private boolean status;
-
 }
